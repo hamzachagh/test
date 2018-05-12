@@ -11,7 +11,7 @@ var path        = require('path');
 var request     = require('request');
 var routes      = require('./routes');
 var activity    = require('./routes/activity');
-
+var salesforceRest = require('salesforceRest.js');
 var app = express();
 
 // Configure Express
@@ -35,7 +35,8 @@ app.post('/login', routes.login );
 app.post('/logout', routes.logout );
 
 app.get('/testing', (req , res) => {
-  res.send('hellooooo ');
+  res.send('hellooooo '+ salesforceRest.accounts);
+  
 });
 
 // Custom Hello World Activity Routes
