@@ -79,6 +79,7 @@ exports.execute = function (req, res) {
         // verification error -> unauthorized request
         if (err) {
             console.error(err);
+            res.send(err);
             return res.status(401).end();
         }
 
