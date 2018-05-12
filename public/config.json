@@ -55,7 +55,7 @@
     },
     "wizardSteps": [
         { "label": "Configure Activity", "key": "step1" },
-        { "label": "Configure Activity 2 ", "key": "step2" }
+        { "label": "Configure Activity 2 ", "key": "step2" , "active" : false}
     ],
     "userInterfaces": {
         "configModal": {
