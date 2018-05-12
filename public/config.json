@@ -2,14 +2,14 @@
     "workflowApiVersion": "1.1",
     "metaData": {
         "icon": "images/icon.png",
-        "iconSmall": "images/iconSmall.png",
-        "category": "message"
+        "iconSmall": "images/icon.png",
+        "category": "Inwi gateway"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "SendSMS",
+          "description": "SendSMS using INWI gateway",
           "step1Label": "Configure Activity"
         }
     },
@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mysterious-sierra-78664.herokuapp.com/journeybuilder/execute",
+          "url": "https://activityjb.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -33,22 +33,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "5157d87e-12ec-465b-81f3-544297775773",
       "save": {
-        "url": "https://mysterious-sierra-78664.herokuapp.com/journeybuilder/save",
+        "url": "https://activityjb.herokuapp.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mysterious-sierra-78664.herokuapp.com/journeybuilder/publish",
+        "url": "https://activityjb.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mysterious-sierra-78664.herokuapp.com/journeybuilder/stop",
+        "url": "https://activityjb.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mysterious-sierra-78664.herokuapp.com/journeybuilder/validate",
+        "url": "https://activityjb.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
