@@ -1,31 +1,36 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "jb-activity-template",
+  "version": "1.0.0",
+  "description": "Journey Builder Activity Template",
   "engines": {
-    "node": "8.9.1"
+    "node": "6.11.1"
   },
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
-  },
-  "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "git+https://github.com/devsutd/journey-builder-activity-template.git"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "journey",
+    "builder",
+    "salesforce marketing cloud",
+    "heroku"
   ],
-  "license": "MIT"
+  "author": "Devs United",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devsutd/journey-builder-activity-template/issues"
+  },
+  "homepage": "https://github.com/devsutd/journey-builder-activity-template#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bower": "^1.8.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.1",
+    "request": "^2.81.0",
+    "require": "^2.4.20"
+  }
 }
