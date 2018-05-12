@@ -2,6 +2,8 @@
 // Module Dependencies
 // -------------------
 var express     = require('express');
+
+
 var bodyParser  = require('body-parser');
 var errorhandler = require('errorhandler');
 var http        = require('http');
@@ -31,6 +33,10 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index );
 app.post('/login', routes.login );
 app.post('/logout', routes.logout );
+
+app.get('/testing', (req , res) => {
+  res.send('hellooooo ');
+});
 
 // Custom Hello World Activity Routes
 app.post('/journeybuilder/save/', activity.save );
