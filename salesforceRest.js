@@ -1,6 +1,6 @@
 var nforce = require('nforce');
 
-var accounts;
+
 var org = nforce.createConnection({
   clientId: '3MVG9Rd3qC6oMalXcM8hVxjOJvhYFvfY_wIr99DZ23Y_nlfVWpJsw1bRzL_eKt6E31PskZRiL5sgdbXsYA3s.',
   clientSecret: '8971956947311806869',
@@ -17,16 +17,18 @@ var org = nforce.createConnection({
 // single-user mode
 org.authenticate({ username: 'hamzachagh2@gmail.com', password: 'Hamza_SE2018'}, function(err, resp){
     // the oauth object was stored in the connection object
-    if(!err) console.log('Cached Token: ' + org.oauth.access_token)
+    //if(!err) console.log('Cached Token: ' + org.oauth.access_token)
 
     org.query({ query: 'SELECT Id, name FROM Lead limit 1 ' }, function(err, res) {
         if(err) return console.error(err);
         else 
-        accounts  = res.records ; 
-        return console.log(res.records);
+         
+        console.log(res.records);
+        
+
       })
 });
 
-exports = {accounts : accounts};
 
 
+//module.exports.accounts  = accounts;
