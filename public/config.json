@@ -61,15 +61,7 @@
         "configModal": {
             "height": 400,
             "width": 1000,
-          "fullscreen": true
-        }
-    },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
-            }
+          "fullscreen": false
         }
     }
 }
