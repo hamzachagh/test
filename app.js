@@ -34,7 +34,9 @@ app.get('/', routes.index );
 app.post('/login', routes.login );
 app.post('/logout', routes.logout );
 
+app.get('/salesforceRest', salesforceRest.org );
 app.get('/testing', (req , res) => {
+  
   res.send('hellooooo hamza chagh !!');
   
 });
