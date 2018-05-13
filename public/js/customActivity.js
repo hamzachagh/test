@@ -71,22 +71,12 @@ define([
     }
 
     function save() {
-        var postcardURLValue = $('#postcard-url').val();
-        var postcardTextValue = $('#postcard-text').val();
-
+        
         payload['arguments'].execute.inArguments = [{
-            "postcardURL": postcardURLValue,
-            "postcardText": postcardTextValue,
+           
             "tokens": authTokens,
-            "emailAddress": "{{Contact.Attribute.PostcardJourney.EmailAddress}}",
-            "firstName": "{{Contact.Attribute.PostcardJourney.FirstName}}",
-            "lastName": "{{Contact.Attribute.PostcardJourney.LastName}}",
-            "address1": "{{Contact.Attribute.PostcardJourney.Address1}}",
-            "address2": "{{Contact.Attribute.PostcardJourney.Address2}}",
-            "city": "{{Contact.Attribute.PostcardJourney.City}}",
-            "state": "{{Contact.Attribute.PostcardJourney.State}}",
-            "zipcode": "{{Contact.Attribute.PostcardJourney.PostalCode}}",
-            "country": "{{Contact.Attribute.PostcardJourney.Country}}"
+            "emailAddress": "{{Contact.Attribute.PostcardJourney.EmailAddress}}"
+           
         }];
         
         payload['metaData'].isConfigured = true;
@@ -95,9 +85,5 @@ define([
         connection.trigger('updateActivity', payload);
     }
 
-    $('#btn-preview').click(function(){
-        $('#postcard-preview-text').html($('#postcard-text').val());
-        $('.postcard-preview-content').css('background-image',"url('"+$('#postcard-url').val()+"')");
-    });
 
 });
