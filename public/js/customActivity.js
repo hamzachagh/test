@@ -68,7 +68,7 @@ define([
 
         connection.trigger('updateButton', {
             button: 'next',
-            text: 'done',
+            text: 'donee',
             visible: true
         });
     }
