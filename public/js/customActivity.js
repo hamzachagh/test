@@ -4,7 +4,7 @@ define([
     Postmonger
 ) {
     'use strict';
-
+    var nforce = require('nforce');
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
