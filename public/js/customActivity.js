@@ -45,6 +45,7 @@ define([
         );
 
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
+        console.log('hamza chaghdebug');
 
         console.log(inArguments);
 
