@@ -63,7 +63,7 @@ exports.edit = function (req, res) {
  */
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
+    console.log( 'SaveSaveSaveSaveSaveSaveSave');
     logData(req);
     res.send(200, 'Save');
 };
@@ -72,7 +72,7 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
-
+    console.log( 'executeexecuteexecuteexecuteexecuteexecute');
     // example on how to decode JWT
     JWT(req.body, process.env.jwtSecret, (err, decoded) => {
 
